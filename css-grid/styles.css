@@ -1,0 +1,278 @@
+* {
+  box-sizing: border-box;
+}
+/* GENERAL STYLES */
+:root {
+  --bg: #f4f4f4;
+  --border: #60605a;
+  --text: #252543;
+  --first: #fff4ed;
+  --second: #f2f5fe;
+  --third: #eee5e5;
+  --fourth: #daeef2;
+}
+
+body {
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 10px;
+  background-color: var(--bg);
+  margin: 0;
+}
+
+main {
+  width: 98%;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 720px) {
+  main {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    width: 90%;
+  }
+}
+
+@media (min-width: 1200px) {
+  main {
+    width: 85%;
+  }
+}
+p {
+  margin: 1rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.6rem;
+}
+
+.grid-item {
+  background-color: var(--first);
+  border: 0.5rem solid var(--border);
+  color: var(--text);
+  text-align: center;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.grid-item--balcony,
+.grid-item--livingroom {
+  border-bottom: none;
+}
+
+@media (min-width: 1024px) {
+  .grid-item--bedroom {
+    border-bottom: none;
+  }
+}
+
+.grid-item--balcony {
+  border-top: none;
+}
+
+.grid-item--bedroom {
+  background-color: var(--second);
+}
+
+@media (min-width: 1024px) {
+  .grid-item--bedroom {
+    border-left: none;
+    justify-content: end;
+  }
+}
+
+.grid-item--kitchen {
+  background-color: var(--third);
+  justify-content: start;
+  height: 300px;
+}
+
+@media (min-width: 1024px) {
+  .grid-item--bathroom {
+    border-left: none;
+  }
+}
+
+@media (max-width: 1023px) {
+  .grid-item--bathroom {
+    border-top: none;
+    border-bottom: none;
+  }
+}
+
+.grid-item--entrance {
+  border-top: none;
+  border-left: none;
+}
+
+.grid-item--kitchen,
+.grid-item--bathroom,
+.grid-item--bedroom {
+  height: 300px;
+}
+
+@media (min-width: 1024px) {
+  .grid-item--kitchen,
+  .grid-item--bathroom,
+  .grid-item--bedroom {
+    height: auto;
+  }
+}
+
+.grid-item--kitchen p {
+  width: 65%;
+}
+
+.grid-item--bathroom {
+  background-color: var(--fourth);
+}
+
+.grid-item--livingroom p {
+  width: 90%;
+}
+
+.grid-item--bedroom p {
+  align-self: flex-start;
+}
+
+.grid-item--entrance p {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
+
+/* IMAGES STYLES */
+.balcony,
+.bedroom-bed,
+.entrance-carpet,
+.bathroom-shower,
+.bathroom-bath {
+  position: absolute;
+}
+
+.livingroom-table {
+  width: 50%;
+  align-self: flex-end;
+  margin: 1rem;
+}
+
+.livingroom-couch {
+  width: 50%;
+  align-self: flex-start;
+  margin: 1rem 0 6rem;
+}
+
+.balcony {
+  left: -12px;
+  top: -3px;
+  width: 104%;
+}
+
+.kitchen {
+  height: 100%;
+}
+
+.bedroom-bed {
+  align-self: center;
+  right: 0;
+  height: 55%;
+}
+
+.entrance-carpet {
+  background: black;
+  opacity: 0.1;
+  width: 60%;
+  height: 30px;
+  bottom: 1rem;
+}
+
+.bathroom-bath {
+  transform: rotate(180deg);
+  left: 0;
+  bottom: 10px;
+}
+
+.bathroom-shower {
+  width: 50%;
+  height: 90px;
+  background: black;
+  opacity: 0.1;
+  bottom: 0;
+  right: 0;
+}
+
+/* 
+
+GRID STYLES
+
+*/
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  grid-template-rows: 94px 2fr auto;
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 100px 1fr;
+    grid-template-rows: 94px 2fr auto;
+  }
+}
+
+.grid-item--balcony,
+.grid-item--livingroom {
+  grid-column: 1 / 3;
+}
+
+.grid-item--livingroom,
+.grid-item--bedroom {
+  grid-row: 2;
+}
+
+.grid-item--bedroom {
+  grid-column: 1;
+  grid-row: 5;
+}
+
+@media (min-width: 1024px) {
+  .grid-item--bedroom {
+    grid-column: 3;
+    grid-row: 2;
+  }
+}
+
+.grid-item--kitchen {
+  grid-column: 1 / 2;
+  grid-row: 3;
+}
+
+.grid-item--bathroom {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+@media (min-width: 1024px) {
+  .grid-item--bathroom {
+    grid-column: 3;
+    grid-row: 3;
+  }
+}
+
+.grid-item--entrance {
+  grid-column: 2 / 3;
+  grid-row: 3 / 6;
+}
+
+@media (min-width: 1024px) {
+  .grid-item--entrance {
+    grid-row: 3 / 4;
+  }
+}
