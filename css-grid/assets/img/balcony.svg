@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="660px" height="64px" viewBox="0 0 660 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>balcony</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="balcony">
+            <polygon id="Path" fill="#F4F4F4" points="89.8880208 0 660 2.45658782e-09 660 64 389.303468 18.6742998 159.686515 8.98744393"></polygon>
+            <path d="M660,64 C583.623423,52.912602 499.811892,42.858258 409.179097,35.072413 C258.077328,22.062272 120.14945,18.046015 0,18.710121 L0,0.2564239 C124.538267,-1.0991944 268.989862,2.6956935 427.697674,17.036153 C511.289764,24.575331 588.882565,34.161639 660,44.707211 L660,64 Z" id="Fill-329" fill="#C6C5C5" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

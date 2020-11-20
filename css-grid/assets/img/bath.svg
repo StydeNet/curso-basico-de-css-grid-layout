@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="108px" height="80px" viewBox="0 0 108 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-653" transform="translate(-1070.000000, -1186.000000)">
+            <g id="Group" transform="translate(1070.000000, 1186.000000)">
+                <path d="M108,80 L47.4497714,80 C42.0121366,79.5897532 27.4989451,77.7579538 15.1415591,66.4761678 C10.401674,62.1494956 -0.925929788,51.807461 0.0605437765,37.2961744 C1.05664147,22.7514957 13.74606,13.92642 18.0143627,10.9592865 C26.4932232,5.06318185 35.130882,3.14074645 47.4497714,1.7096531 C61.8426613,0.0352738824 82.4912372,-1.10483049 108,1.7096531 L108,80 Z" id="Fill-289" fill="#FFFFFF"></path>
+                <polygon id="Fill-290" fill="#DDDDDD" points="84 80 107 80 107 0 84 0"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
